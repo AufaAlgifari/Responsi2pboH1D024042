@@ -1,0 +1,24 @@
+﻿SOAL PENGAYAAN (Refleksi Polimorfisme)
+Jawablah pertanyaan berikut:
+1. Apa yang dimaksud dengan polimorfisme dalam OOP? Jelaskan bagaimana metode override bekerja.
+2. Mengapa array bertipe DefaultMesin dapat menyimpan objek MesinMotor dan MesinTraktor?
+3. Apa perbedaan override dan overload?
+4. Apa keuntungan menggunakan polimorfisme dalam sistem inventaris seperti contoh di atas?
+5. Bagaimana cara kerja dynamic dispatch pada Java saat memanggil method override?
+
+Jawaban
+
+1. polimorfisme adalah kemampuan suatu objek untuk memiliki banyak bentuk
+Metode override bekerja dengan cara subclass mengganti implementasi method yang diwarisi dari superclass, sehingga saat
+method dipanggil melalui objek subclass, versi yang ada di subclass yang dijalankan, bukan versi di superclass.
+
+2. karena kedua kelas ini merupakan subclass dari DefaultMesin. Dengan kata lain, polimorfisme memungkinkan objek
+subclass diperlakukan sebagai objek dari superclassnya, sehingga kita bisa menyimpan berbagai jenis mesin dalam satu array.
+
+3. Perbedaan antara override dan overload adalah override terjadi saat subclass membuat ulang method dari superclass
+dengan nama dan parameter sama untuk mengganti perilaku, sedangkan overload terjadi saat satu kelas memiliki beberapa
+method dengan nama sama tetapi parameter berbeda, untuk memberikan berbagai cara pemanggilan method tersebut.
+
+4. Keuntungan menggunakan polimorfisme dalam sistem inventaris adalah kode lebih fleksibel dan mudah dikembangkan.
+
+5. Bekerja dengan cara menentukan versi method yang dijalankan pada saat runtime, bukan saat compile time.

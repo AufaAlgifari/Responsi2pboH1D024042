@@ -1,0 +1,30 @@
+Setelah anda menyelesaikan kode, tolong jawab pertanyaan dibawah ini ya =
+
+
+1. Apa tujuan utama adanya interface dalam pemrograman berorientasi objek, dan bagaimana interface membantu menciptakan kontrak perilaku?
+2. Mengapa interface dapat memiliki banyak implementasi, dan apa makna konseptual dari kemampuan tersebut dalam desain sistem?
+3. Apa perbedaan mendasar antara extends dan implements dalam konteks interface, jika dilihat secara konsep tanpa melihat contoh kode?
+4. Apa alasan diperkenalkannya default method dalam interface, dan bagaimana fitur ini memengaruhi keberlangsungan (compatibility) suatu sistem yang sudah berjalan?
+5. Bagaimana konsep multiple interface memperluas fleksibilitas desain tanpa menimbulkan masalah kompleksitas yang biasa muncul pada multiple inheritance?
+
+Jawaban
+
+1. untuk menciptakan kontrak perilaku yang harus dipenuhi oleh kelas yang mengimplementasikannya. Interface menentukan
+apa yang harus dilakukan, tanpa mengatur bagaimana caranya, sehingga setiap kelas bisa memberikan implementasi
+spesifik sesuai kebutuhan sambil tetap mematuhi aturan yang sama.
+
+2. karena berbagai kelas bisa mengimplementasikan interface yang sama dengan cara berbeda.
+Secara konseptual, hal ini memungkinkan desain sistem menjadi fleksibel, karena satu kontrak perilaku bisa diterapkan
+di berbagai objek dengan karakteristik berbeda, tanpa mengubah kode yang menggunakan interface tersebut.
+
+3. extends digunakan untuk mewarisi sifat atau implementasi dari superclass atau interface lain, sedangkan implements
+digunakan untuk menjalankan kontrak yang ditetapkan oleh interface.
+
+4. Alasan diperkenalkannya default method agar interface bisa menambahkan method baru tanpa memaksa semua kelas yang
+sudah ada untuk mengubah implementasinya.
+Fitur ini sangat berguna untuk menjaga kompatibilitas sistem yang sudah berjalan, sehingga pengembangan interface
+baru tidak merusak kode lama.
+
+5. Konsep multiple interface memperluas fleksibilitas desain karena satu kelas bisa menggabungkan berbagai kontrak
+sekaligus tanpa menimbulkan masalah kompleksitas yang biasanya muncul pada multiple inheritance (pewarisan ganda kelas),
+seperti konflik atribut atau method.
